@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participer à un Projet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Participer à ce projet</h2>
+        <p><strong>Montant restant à collecter :</strong> <span id="montantRestant">2000</span>€</p>
+        
+        <form id="donForm">
+            <label for="montant">Montant du don (€) :</label>
+            <input type="number" id="montant" name="montant" min="1" required>
+            <button type="submit">Donner</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('donForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            let montantDon = parseFloat(document.getElementById('montant').value);
+            let montantRestant = parseFloat(document.getElementById('montantRestant').innerText);
+
+            if (montantDon > montantRestant) {
+                alert("Le montant dépasse le montant restant !");
+            } else {
+                alert("Merci pour votre don !");
+                document.getElementById('montantRestant').innerText = montantRestant - montantDon;
+            }
+        });
+    </script>
+</body>
+</html>

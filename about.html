@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpHub - À propos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            padding-top: 80px;
+        }
+        .navbar {
+            padding: 0 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        .logo {
+            width: 100px;
+            height: auto;
+        }
+        .navbar-nav .nav-item {
+            margin: 0 10px;
+        }
+        .about-hero {
+            background-color: #003C37;
+            color: #F8CFCF;
+            padding: 80px 0;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .about-hero h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .about-hero .lead {
+            font-size: 1.4rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .our-story {
+            padding: 60px 0;
+            background-color: #fff;
+        }
+        .our-story h2 {
+            color: #004A42;
+            font-size: 2.2rem;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+        .our-story p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        .values {
+            padding: 80px 0;
+            background-color: #F8F9FA;
+        }
+        .values h2 {
+            color: #004A42;
+            font-size: 2.2rem;
+            font-weight: 600;
+        }
+        .value-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            height: 100%;
+            text-align: center;
+        }
+        .value-icon {
+            font-size: 2.5rem;
+            color: #004A42;
+            margin-bottom: 20px;
+        }
+        .value-card h3 {
+            color: #003C37;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        .cta-about {
+            background-color: #003C37;
+            color: #F8CFCF;
+            padding: 80px 0;
+            text-align: center;
+        }
+        .cta-about h2 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .cta-about p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        .cta-buttons .btn {
+            padding: 12px 30px;
+            font-weight: 600;
+            margin: 0 10px;
+            border-radius: 50px;
+        }
+        .btn-primary {
+            background-color: #004A42;
+            border-color: #004A42;
+        }
+        .btn-primary:hover {
+            background-color: #003C37;
+            border-color: #003C37;
+        }
+        .btn-outline-light:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        footer {
+            background-color: #343a40;
+        }
+        @media (max-width: 768px) {
+            .about-hero h1 {
+                font-size: 2rem;
+            }
+            .about-hero .lead {
+                font-size: 1.1rem;
+            }
+            .cta-buttons .btn {
+                display: block;
+                width: 80%;
+                margin: 10px auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <ul class="navbar-nav d-flex flex-row">
+                <li class="nav-item mx-3"><a class="nav-link fs-5" href="about.html">À propos</a></li>
+                <li class="nav-item mx-3"><a class="nav-link fs-5" href="inscriptionDonateur.html">Liste des projets</a></li>
+                <li class="nav-item mx-3"><a class="nav-link fs-5" href="inscriptionDonateur.html">Soutenir une cause</a></li>
+            </ul>
+            <a href="accueil.html"><img src="Adobe Express - file (1).png" alt="logo" class="logo"></a>
+            <ul class="navbar-nav d-flex flex-row">
+                <li class="nav-item dropdown mx-3"><a class="nav-link dropdown-toggle fs-5" href="#" role="button" data-bs-toggle="dropdown">S'inscrire</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="inscriptionDonateur.html">S'inscrire comme Donateur</a></li>
+                        <li><a class="dropdown-item" href="inscriptionAsso.html">S'inscrire comme Association</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item mx-3"><a class="nav-link fs-5" href="login.html">Se connecter</a></li>
+                <li class="nav-item dropdown mx-3">
+                    <a class="nav-link fs-5" href="login.html" role="button" >
+                        <i class="fas fa-user-circle fa-2x"></i> </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="about-hero">
+        <div class="container">
+            <h1>Notre mission : connecter les générosités</h1>
+            <p class="lead">HelpHub est bien plus qu'une plateforme de collecte de fonds. Nous créons des ponts entre ceux qui veulent aider et ceux qui en ont besoin.</p>
+        </div>
+    </section>
+
+    <section class="our-story">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>Notre histoire</h2>
+                    <p>Fondée en 2020, HelpHub est née d'un constat simple : de nombreuses associations peinent à trouver des financements, tandis que des donateurs potentiels ne savent pas comment aider efficacement.</p>
+                    <p>Notre équipe, composée de développeurs passionnés et d'experts en philanthropie, a créé cette plateforme pour faciliter ces connexions et maximiser l'impact de chaque don.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="histoire.avif" alt="Notre équipe" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="values">
+        <div class="container">
+            <h2 class="text-center mb-5">Nos valeurs</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-hand-holding-heart"></i>
+                        </div>
+                        <h3>Solidarité</h3>
+                        <p>Nous croyons en la force du collectif et en l'entraide comme moteur de changement.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h3>Transparence</h3>
+                        <p>Chaque don est traçable et chaque projet est vérifié pour garantir votre confiance.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3>Impact</h3>
+                        <p>Nous mesurons et maximisons l'impact concret de chaque contribution.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-about">
+        <div class="container text-center">
+            <h2>Prêt à faire la différence ?</h2>
+            <p>Rejoignez notre communauté et participez au changement.</p>
+            <div class="cta-buttons">
+                <a href="inscriptionDonateur.html" class="btn btn-primary btn-lg">Devenir donateur</a>
+                <a href="inscriptionAsso.html" class="btn btn-outline-light btn-lg">Inscrire mon association</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>HelpHub</h5>
+                    <p>Nous croyons en la solidarité. Chaque geste compte pour un avenir meilleur.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Liens Rapides</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-white">À propos</a></li>
+                        <li><a href="inscriptionDonateur.html" class="text-white">Soutenir une cause</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Suivez-nous</h5>
+                    <ul class="list-unstyled d-flex">
+                        <li class="me-3">
+                            <a href="https://facebook.com" class="text-white" target="_blank">
+                                <i class="fab fa-facebook fa-2x"></i>
+                            </a>
+                        </li>
+                        <li class="me-3">
+                            <a href="https://twitter.com" class="text-white" target="_blank">
+                                <i class="fab fa-twitter fa-2x"></i>
+                            </a>
+                        </li>
+                        <li class="me-3">
+                            <a href="https://instagram.com" class="text-white" target="_blank">
+                                <i class="fab fa-instagram fa-2x"></i>
+                            </a>
+                        </li>
+                        <li class="me-3">
+                            <a href="https://linkedin.com" class="text-white" target="_blank">
+                                <i class="fab fa-linkedin fa-2x"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center py-3">
+            <p>&copy; 2025 HelpHub. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
